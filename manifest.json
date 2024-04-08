@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Google Translate",
+  "version": "2.0.13",
+  "description": "View translations easily as you browse the web. By the Google Translate team.",
+  "icons": {
+    "16": "icons/16.png",
+    "19": "icons/19.png",
+    "32": "icons/32.png",
+    "38": "icons/38.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
